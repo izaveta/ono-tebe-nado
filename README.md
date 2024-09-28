@@ -1,1 +1,1 @@
-https://github.com/izaveta/first-project/tree/c3185be4274727c690553000ce3436b230aaff5c
+https://github.com/izaveta/ono-tebe-nado
