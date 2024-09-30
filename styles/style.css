@@ -1,4 +1,4 @@
-.header {
+  .header {
     padding: 94px 86px 96px 50px;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     width: 148px;
     height: 105px;
   }
-  
+
   .header__links-list {
     font-size: 18px;
   }
@@ -30,22 +30,21 @@
   
   .number,
   .email,
-  .header__items,
-  .footer__items {
+  .header__items {
     text-decoration: none;
     border-bottom: 1px solid;
   }
   
-  .header__no-bullit,
-  .footer__no-bullit,
+  .link-active,
   .lots__no-bullit,
-  .address__no-bullit {
+  .address__no-bullit,
+  .footer__no-bullit {
+    text-decoration: none;
     list-style: none;
   }
   
   body {
     width: 1100px;
-    height: 3028px;
   }
   
   .cover {
@@ -118,6 +117,7 @@
     color: white;
     border: 1px solid white;
     padding: 12px 32px 11px 31px;
+    font-family: inherit; 
   }
   
   .lots__heading {
@@ -133,19 +133,23 @@
     justify-content: center;
     column-gap: 25px;
     padding-top: 27px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
   }
   
+  .card-link {
+    text-decoration: none;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 334px;
     min-height: 563px;
-    max-height: 563px;
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-bottom: 30px;
   }
   
   .card_type_film {
@@ -193,7 +197,7 @@
     display: grid;
     grid-template-columns: 312px auto;
     padding-top: 183px;
-    padding-bottom: 154px;
+    padding-bottom: 177px;
     padding-left: 71px;
   }
   
@@ -222,13 +226,15 @@
     font-size: 40px;
     text-transform: uppercase;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
   }
   
   .about__text {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    padding-bottom: 28px;
-    padding-right: 27px;
+    gap: 28px;
+    padding-right: 28px;
   }
   
   .footer {
@@ -236,7 +242,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 98px;
     width: 1000px;
     padding-left: 50px;
     padding-right: 50px;
@@ -256,9 +261,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
   }
-  
+
   .footer__social-icon {
     max-width: 48px;
     max-height: 48px;
-  }  
+  }
